@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "500875482493",
+    "project_id": "deadlinetracker-2fab4",
+    "storage_bucket": "deadlinetracker-2fab4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500875482493:android:3d3c8aeebec6737777e814",
+        "android_client_info": {
+          "package_name": "com.example.deadline_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500875482493-vkms63dpi7h7notcsmhegvc238fkhmkc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.deadline_tracker",
+            "certificate_hash": "7f3791dfba6fcc7ef615748f93a636aa04b25bf2"
+          }
+        },
+        {
+          "client_id": "500875482493-vf49k60r79cids5ipgltp1e3s0v78m24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5a5J7LTTgF5mXys_O4FKR9R9OCEHNr6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500875482493-vf49k60r79cids5ipgltp1e3s0v78m24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

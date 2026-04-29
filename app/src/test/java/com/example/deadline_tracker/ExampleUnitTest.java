@@ -1,4 +1,4 @@
-package com.example.deadline_traker;
+package com.example.deadline_tracker;
 
 import org.junit.Test;
 

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DeadLine_Tracker</string>
+    <string name="app_tagline">Never miss a task again</string>
+
+    <!-- Auth -->
+    <string name="welcome_back">Welcome back 👋</string>
+    <string name="login_subtitle">Log in to your account</string>
+    <string name="label_id">Student / Teacher ID</string>
+    <string name="hint_student_id">e.g. STU-2024-0042</string>
+    <string name="hint_teacher_id">e.g. TCH-0021</string>
+    <string name="label_password">Password</string>
+    <string name="hint_password">••••••••</string>
+    <string name="btn_login">Log in</string>
+    <string name="btn_register">Register now</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="or">or</string>
+
+    <!-- Register -->
+    <string name="choose_role">Who are you?</string>
+    <string name="role_student">Student</string>
+    <string name="role_teacher">Teacher</string>
+    <string name="role_cr">Class Rep (CR)</string>
+    <string name="student_desc">View tasks posted by your teachers and CR</string>
+    <string name="teacher_desc">Post CT, Assignment, and Quiz deadlines</string>
+    <string name="cr_desc">View and share tasks with your batch</string>
+    <string name="btn_register_teacher">Register as Teacher</string>
+    <string name="btn_register_cr">Register as CR</string>
+    <string name="verification_note">A verification link will be sent to your Gmail before activation.</string>
+    <string name="teacher_only_note">Only Teachers can post tasks. CR can view and share but cannot post.</string>
+
+    <!-- Dashboard -->
+    <string name="upcoming_tasks">Upcoming Tasks</string>
+    <string name="label_urgent">Urgent</string>
+    <string name="label_this_week">This week</string>
+    <string name="label_completed">Completed</string>
+
+    <!-- Task Types -->
+    <string name="type_ct">CT</string>
+    <string name="type_assignment">Assignment</string>
+    <string name="type_quiz">Quiz</string>
+
+    <!-- Teacher Dashboard -->
+    <string name="today_tasks">Today\'s Tasks</string>
+    <string name="add_task">Add Task</string>
+    <string name="post_task">Post Task</string>
+    <string name="label_title">Task Title</string>
+    <string name="label_date">Date &amp; Time</string>
+    <string name="label_type">Type</string>
+    <string name="label_batch">Batch(es)</string>
+    <string name="label_description">Description</string>
+    <string name="conflict_warning">Date conflict!</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_calendar">Calendar</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Calendar -->
+    <string name="tap_date_hint">Tap a date to see tasks</string>
+    <string name="no_date_selected">No date selected</string>
+    <string name="no_tasks_day">No tasks on this day</string>
+</resources>

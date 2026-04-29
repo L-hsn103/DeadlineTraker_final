@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/notifBottomNav"
+        android:orientation="vertical"
+        android:paddingTop="44dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:paddingLeft="20dp" android:paddingRight="20dp"
+            android:paddingBottom="16dp">
+
+            <TextView android:id="@+id/tvBack"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="←" android:textSize="20sp" android:textColor="#66FFFFFF"
+                android:paddingRight="14dp" />
+
+            <TextView
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Notifications"
+                android:textSize="20sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" android:fontFamily="@font/sora" />
+
+            <TextView android:id="@+id/tvMarkAll"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Mark all read" android:textSize="11sp"
+                android:textColor="@color/green_light" />
+        </LinearLayout>
+
+        <!-- Filter Tabs: All | Urgent | Today -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" android:paddingRight="20dp"
+            android:paddingBottom="14dp">
+
+            <TextView android:id="@+id/tabAll"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="All" android:textSize="12sp"
+                android:textColor="@color/green_light"
+                android:background="@drawable/bg_chip_batch_sel"
+                android:paddingLeft="14dp" android:paddingRight="14dp"
+                android:paddingTop="6dp" android:paddingBottom="6dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView android:id="@+id/tabUrgent"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Urgent" android:textSize="12sp"
+                android:textColor="#66FFFFFF"
+                android:background="@drawable/bg_chip_default"
+                android:paddingLeft="14dp" android:paddingRight="14dp"
+                android:paddingTop="6dp" android:paddingBottom="6dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView android:id="@+id/tabToday"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Today" android:textSize="12sp"
+                android:textColor="#66FFFFFF"
+                android:background="@drawable/bg_chip_default"
+                android:paddingLeft="14dp" android:paddingRight="14dp"
+                android:paddingTop="6dp" android:paddingBottom="6dp" />
+        </LinearLayout>
+
+        <!-- Notification List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp" android:paddingRight="20dp"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+
+    <!-- Bottom Nav -->
+    <LinearLayout
+        android:id="@+id/notifBottomNav"
+        android:layout_width="match_parent" android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/bg_bottom_nav"
+        android:paddingBottom="8dp">
+
+        <LinearLayout android:id="@+id/navHome"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🏠" android:textSize="20sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Home" android:textSize="10sp"
+                android:textColor="@color/text_secondary" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/navCalendar"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="📅" android:textSize="20sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Calendar" android:textSize="10sp"
+                android:textColor="@color/text_secondary" />
+        </LinearLayout>
+
+        <!-- Active: Notifications -->
+        <LinearLayout
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_nav_active_green">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🔔" android:textSize="20sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Notifications" android:textSize="10sp"
+                android:textColor="@color/green_light" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/navSettings"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="⚙️" android:textSize="20sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Settings" android:textSize="10sp"
+                android:textColor="@color/text_secondary" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

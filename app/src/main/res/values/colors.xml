@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== APP BACKGROUNDS ===== -->
+    <color name="bg_primary">#07100A</color>          <!-- Main dark green-black background -->
+    <color name="bg_top_gradient_start">#0D2010</color> <!-- Top header gradient start -->
+    <color name="bg_splash">#0D2A14</color>           <!-- Splash screen bg -->
+    <color name="bg_card">#0D0D0D</color>             <!-- Card background (3% white on dark) -->
+    <color name="bg_bottom_nav">#0D1A10</color>       <!-- Bottom navigation bar -->
+
+    <!-- Teacher Dashboard specific backgrounds -->
+    <color name="bg_teacher_primary">#0A0712</color>
+    <color name="bg_teacher_top">#160D2A</color>
+    <color name="bg_teacher_nav">#100820</color>
+
+    <!-- ===== PRIMARY BRAND COLORS ===== -->
+    <!-- Student / App accent = GREEN -->
+    <color name="green_primary">#22C55E</color>
+    <color name="green_dark">#15803D</color>
+    <color name="green_medium">#16A34A</color>
+    <color name="green_light">#4ADE80</color>          <!-- Light green for labels/active nav -->
+    <color name="green_tint">#1A3020</color>           <!-- Green tint border -->
+
+    <!-- Teacher accent = PURPLE -->
+    <color name="purple_primary">#7C3AED</color>
+    <color name="purple_medium">#A855F7</color>
+    <color name="purple_light">#A78BFA</color>
+    <color name="purple_pale">#C4B5FD</color>
+
+    <!-- ===== TASK TYPE COLORS ===== -->
+    <!-- CT (Class Test) = Blue -->
+    <color name="ct_color">#93C5FD</color>
+    <color name="ct_bg">#0F1F33</color>               <!-- ~8% blue on dark -->
+    <color name="ct_border">#1A3A5C</color>
+
+    <!-- Assignment = Purple -->
+    <color name="asgn_color">#C4B5FD</color>
+    <color name="asgn_bg">#150F2A</color>
+    <color name="asgn_border">#2A1F4A</color>
+
+    <!-- Quiz = Yellow -->
+    <color name="quiz_color">#FCD34D</color>
+    <color name="quiz_bg">#1F1A0A</color>
+    <color name="quiz_border">#3D3210</color>
+
+    <!-- ===== STATUS / URGENCY COLORS ===== -->
+    <color name="urgent_red">#EF4444</color>
+    <color name="urgent_red_light">#F87171</color>
+    <color name="urgent_bg">#1F0808</color>
+
+    <color name="warning_yellow">#FBBF24</color>
+    <color name="warning_bg">#1F1808</color>
+
+    <color name="success_green">#4ADE80</color>
+    <color name="success_bg">#081F0E</color>
+
+    <!-- ===== TASK DOT COLORS ===== -->
+    <color name="dot_red">#EF4444</color>
+    <color name="dot_yellow">#FBBF24</color>
+    <color name="dot_blue">#60A5FA</color>
+    <color name="dot_purple">#A78BFA</color>
+
+    <!-- ===== TEXT COLORS ===== -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#FFFFFF59</color>    <!-- 35% white -->
+    <color name="text_muted">#FFFFFF26</color>        <!-- 15% white -->
+    <color name="text_label">#FFFFFF73</color>        <!-- 45% white -->
+    <color name="text_green">#4ADE80</color>
+    <color name="text_purple">#A78BFA</color>
+
+    <!-- ===== BORDERS / DIVIDERS ===== -->
+    <color name="border_default">#FFFFFF12</color>    <!-- 7% white -->
+    <color name="border_subtle">#FFFFFF17</color>     <!-- 9% white -->
+    <color name="border_green">#22C55E40</color>
+    <color name="border_purple">#A78BFA66</color>
+
+    <!-- ===== NOTIFICATION BADGE ===== -->
+    <color name="badge_red">#F87171</color>
+
+    <!-- ===== CONFLICT BANNER ===== -->
+    <color name="conflict_bg">#1F0808</color>
+    <color name="conflict_border">#EF444440</color>
+    <color name="conflict_text">#FCA5A5</color>
+
+    <!-- ===== CALENDAR ===== -->
+    <color name="cal_today_bg">#2A1F4A</color>        <!-- Purple tint for today -->
+    <color name="cal_selected_bg">#3D2E6B</color>
+    <color name="cal_dot_purple">#A78BFA</color>
+</resources>

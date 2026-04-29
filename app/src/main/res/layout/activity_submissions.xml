@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/bg_primary">
+    <!--  Top bar  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingTop="48dp" android:paddingBottom="16dp">
+        <TextView android:id="@+id/tvBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="←" android:textSize="22sp" android:textColor="#66FFFFFF" android:paddingRight="14dp"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Submissions" android:textSize="20sp" android:textStyle="bold" android:textColor="@color/text_primary" android:fontFamily="@font/sora"/>
+            <TextView android:id="@+id/tvTaskTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12sp" android:textColor="@color/text_secondary" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--  Submission count badge  -->
+    <TextView android:id="@+id/tvSubmissionCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 students submitted" android:textSize="12sp" android:textColor="@color/green_light" android:background="@drawable/bg_stat_done" android:paddingLeft="14dp" android:paddingRight="14dp" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_marginLeft="20dp" android:layout_marginBottom="16dp"/>
+    <!--  Progress bar  -->
+    <ProgressBar android:id="@+id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:indeterminateTint="@color/green_primary" android:visibility="gone"/>
+    <!--  Empty state  -->
+    <TextView android:id="@+id/tvEmptyState" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="📭 No submissions yet" android:textSize="14sp" android:textColor="@color/text_secondary" android:gravity="center" android:paddingTop="60dp" android:visibility="gone"/>
+    <!--  Submissions list  -->
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerSubmissions" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="24dp" android:clipToPadding="false"/>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_task_card"
+    android:padding="13dp"
+    android:layout_marginBottom="10dp">
+
+    <!-- Colored dot -->
+    <View android:id="@+id/taskDot"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="11dp"
+        android:layout_gravity="top"
+        android:background="@drawable/bg_dot_red" />
+
+    <!-- Task info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/tvTaskTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CT-1 Exam"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/sora" />
+
+        <TextView android:id="@+id/tvTaskDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="📅 Apr 12 — Batch 2022"
+            android:textSize="11sp"
+            android:textColor="@color/text_secondary" />
+    </LinearLayout>
+
+    <!-- Type tag -->
+    <TextView android:id="@+id/tvTaskType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CT"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/ct_color"
+        android:background="@drawable/bg_tag_ct"
+        android:paddingLeft="9dp" android:paddingRight="9dp"
+        android:paddingTop="3dp" android:paddingBottom="3dp"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Delete button -->
+    <FrameLayout android:id="@+id/btnDelete"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg_stat_urgent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="🗑"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+</LinearLayout>

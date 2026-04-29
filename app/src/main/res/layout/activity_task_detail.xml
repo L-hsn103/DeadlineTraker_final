@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="44dp"
+        android:paddingBottom="40dp">
+
+        <!-- Top bar -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:paddingLeft="20dp" android:paddingRight="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView android:id="@+id/tvBack"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="←" android:textSize="22sp" android:textColor="#66FFFFFF"
+                android:paddingRight="14dp"/>
+
+            <TextView
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Task Detail"
+                android:textSize="20sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" android:fontFamily="@font/sora"/>
+
+            <TextView android:id="@+id/tvDetailType"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="CT" android:textSize="12sp" android:textStyle="bold"
+                android:textColor="@color/ct_color" android:background="@drawable/bg_tag_ct"
+                android:paddingLeft="12dp" android:paddingRight="12dp"
+                android:paddingTop="5dp" android:paddingBottom="5dp"/>
+        </LinearLayout>
+
+        <!-- Title card -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_header_gradient_green"
+            android:paddingLeft="20dp" android:paddingRight="20dp"
+            android:paddingTop="20dp" android:paddingBottom="24dp">
+
+            <TextView android:id="@+id/tvDetailTitle"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="CT-1 Exam" android:textSize="24sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" android:fontFamily="@font/sora"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView android:id="@+id/tvDetailCountdown"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="⏰ 2 days remaining" android:textSize="12sp"
+                android:textColor="@color/green_light"
+                android:background="@drawable/bg_stat_done"
+                android:paddingLeft="12dp" android:paddingRight="12dp"
+                android:paddingTop="5dp" android:paddingBottom="5dp"/>
+        </LinearLayout>
+
+        <!-- Details section -->
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp" android:paddingRight="20dp"
+            android:paddingTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="DETAILS" android:textSize="10sp"
+                android:textColor="@color/text_secondary" android:textAllCaps="true"
+                android:letterSpacing="0.08" android:fontFamily="@font/sora"
+                android:layout_marginBottom="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:background="@drawable/bg_task_card"
+                android:padding="16dp" android:layout_marginBottom="14dp">
+
+                <!-- Date -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:paddingBottom="12dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="📅  Date"
+                        android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                    <TextView android:id="@+id/tvDetailDate"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="—" android:textSize="13sp" android:textStyle="bold"
+                        android:textColor="@color/text_primary" android:fontFamily="@font/sora"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.5dp"
+                    android:background="#12FFFFFF" android:layout_marginBottom="12dp"/>
+
+                <!-- Time -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:paddingBottom="12dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="🕐  Time"
+                        android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                    <TextView android:id="@+id/tvDetailTime"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="—" android:textSize="13sp" android:textStyle="bold"
+                        android:textColor="@color/text_primary" android:fontFamily="@font/sora"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.5dp"
+                    android:background="#12FFFFFF" android:layout_marginBottom="12dp"/>
+
+                <!-- Department -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:paddingBottom="12dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="🏫  Department"
+                        android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                    <TextView android:id="@+id/tvDetailDept"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="—" android:textSize="13sp" android:textStyle="bold"
+                        android:textColor="@color/text_primary" android:fontFamily="@font/sora"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.5dp"
+                    android:background="#12FFFFFF" android:layout_marginBottom="12dp"/>
+
+                <!-- Batch -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:paddingBottom="12dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="👥  Batch"
+                        android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                    <TextView android:id="@+id/tvDetailBatch"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="—" android:textSize="13sp" android:textStyle="bold"
+                        android:textColor="@color/text_primary" android:fontFamily="@font/sora"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.5dp"
+                    android:background="#12FFFFFF" android:layout_marginBottom="12dp"/>
+
+                <!-- Teacher -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="👤  Teacher"
+                        android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                    <TextView android:id="@+id/tvDetailTeacher"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="—" android:textSize="13sp" android:textStyle="bold"
+                        android:textColor="@color/text_primary" android:fontFamily="@font/sora"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="DESCRIPTION" android:textSize="10sp"
+                android:textColor="@color/text_secondary" android:textAllCaps="true"
+                android:letterSpacing="0.08" android:fontFamily="@font/sora"
+                android:layout_marginBottom="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:background="@drawable/bg_task_card"
+                android:padding="16dp" android:layout_marginBottom="14dp">
+                <TextView android:id="@+id/tvDetailDescription"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="No description provided." android:textSize="13sp"
+                    android:textColor="@color/text_secondary"
+                    android:lineSpacingMultiplier="1.6"/>
+            </LinearLayout>
+
+            <!-- Time remaining -->
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="TIME REMAINING" android:textSize="10sp"
+                android:textColor="@color/text_secondary" android:textAllCaps="true"
+                android:letterSpacing="0.08" android:fontFamily="@font/sora"
+                android:layout_marginBottom="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:background="@drawable/bg_task_card"
+                android:padding="16dp" android:gravity="center_vertical"
+                android:layout_marginBottom="20dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="⏰" android:textSize="24sp" android:layout_marginEnd="12dp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:id="@+id/tvDetailTimeLeft"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="2 days remaining" android:textSize="15sp"
+                        android:textStyle="bold" android:textColor="@color/green_light"
+                        android:fontFamily="@font/sora"/>
+                    <TextView android:id="@+id/tvDetailStatus"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Upcoming" android:textSize="11sp"
+                        android:textColor="@color/text_secondary" android:layout_marginTop="3dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ══ TEACHER ATTACHMENT ══ -->
+            <TextView android:id="@+id/labelAttachment"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="ATTACHMENT" android:textSize="10sp"
+                android:textColor="@color/text_secondary" android:textAllCaps="true"
+                android:letterSpacing="0.08" android:fontFamily="@font/sora"
+                android:layout_marginBottom="12dp" android:visibility="gone"/>
+
+            <LinearLayout android:id="@+id/cardAttachment"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:background="@drawable/bg_task_card"
+                android:padding="16dp" android:layout_marginBottom="20dp"
+                android:visibility="gone">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="📎" android:textSize="22sp" android:layout_marginEnd="12dp"/>
+                <TextView android:id="@+id/tvAttachmentName"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="file.pdf"
+                    android:textSize="13sp" android:textColor="@color/text_primary"/>
+                <TextView android:id="@+id/btnDownload"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Download" android:textSize="12sp" android:textStyle="bold"
+                    android:textColor="@color/green_light"
+                    android:background="@drawable/bg_stat_done"
+                    android:paddingLeft="12dp" android:paddingRight="12dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"/>
+            </LinearLayout>
+
+            <!-- ══ STUDENT SUBMISSION ══ -->
+            <TextView android:id="@+id/labelSubmission"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="SUBMIT YOUR WORK" android:textSize="10sp"
+                android:textColor="@color/text_secondary" android:textAllCaps="true"
+                android:letterSpacing="0.08" android:fontFamily="@font/sora"
+                android:layout_marginBottom="12dp" android:visibility="gone"/>
+
+            <!-- Submission status -->
+            <LinearLayout android:id="@+id/cardSubmissionStatus"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:background="@drawable/bg_info_green"
+                android:padding="14dp" android:layout_marginBottom="12dp"
+                android:visibility="gone">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="✅" android:textSize="18sp" android:layout_marginEnd="10dp"/>
+                <TextView android:id="@+id/tvSubmissionStatus"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Submitted" android:textSize="13sp"
+                    android:textColor="@color/green_light" android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Upload submission button -->
+            <LinearLayout android:id="@+id/btnUploadSubmission"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:background="@drawable/bg_input_field"
+                android:padding="14dp" android:layout_marginBottom="8dp"
+                android:visibility="gone">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="📤" android:textSize="20sp" android:layout_marginEnd="12dp"/>
+                <TextView android:id="@+id/tvUploadLabel"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tap to upload your solution (PDF/image)"
+                    android:textSize="13sp" android:textColor="@color/text_muted"/>
+            </LinearLayout>
+
+            <!-- Selected file name -->
+            <TextView android:id="@+id/tvSubmissionFileName"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="" android:textSize="11sp"
+                android:textColor="@color/green_light"
+                android:layout_marginBottom="10dp" android:visibility="gone"/>
+
+            <!-- Submit button -->
+            <Button android:id="@+id/btnSubmit"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Submit Assignment" android:textSize="14sp"
+                android:textColor="@color/text_primary" android:fontFamily="@font/sora"
+                android:textStyle="bold" android:background="@drawable/bg_button_green"
+                android:padding="14dp" android:layout_marginBottom="10dp"
+                android:visibility="gone"/>
+
+            <!-- ✅ Resubmit button — shown after student already submitted -->
+            <Button android:id="@+id/btnResubmit"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="🔄  Resubmit Assignment" android:textSize="14sp"
+                android:textColor="@color/text_primary" android:fontFamily="@font/sora"
+                android:textStyle="bold" android:background="@drawable/bg_button_green"
+                android:padding="14dp" android:layout_marginBottom="10dp"
+                android:visibility="gone"/>
+
+            <!-- Progress bar -->
+            <ProgressBar android:id="@+id/progressBar"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center" android:layout_marginBottom="10dp"
+                android:indeterminateTint="@color/green_primary"
+                android:visibility="gone"/>
+
+            <!-- ══ VIEW SUBMISSIONS BUTTON (teacher/CR only) ══ -->
+            <Button android:id="@+id/btnViewSubmissions"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="View Submissions" android:textSize="14sp"
+                android:textColor="@color/text_primary" android:fontFamily="@font/sora"
+                android:textStyle="bold" android:background="@drawable/bg_button_purple"
+                android:padding="14dp" android:layout_marginTop="8dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

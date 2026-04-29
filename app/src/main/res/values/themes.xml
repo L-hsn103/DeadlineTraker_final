@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DeadLineTracker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryVariant">@color/green_dark</item>
+        <item name="colorSecondary">@color/purple_primary</item>
+        <item name="colorSecondaryVariant">@color/purple_medium</item>
+        <item name="android:colorBackground">@color/bg_primary</item>
+        <item name="colorSurface">@color/bg_card</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:windowBackground">@color/bg_primary</item>
+        <item name="android:statusBarColor">@color/bg_primary</item>
+        <item name="android:navigationBarColor">@color/bg_bottom_nav</item>
+    </style>
+
+    <!-- Teacher theme (purple accent) -->
+    <style name="Theme.DeadLineTracker.Teacher" parent="Theme.DeadLineTracker">
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryVariant">@color/purple_medium</item>
+        <item name="android:colorBackground">@color/bg_teacher_primary</item>
+        <item name="android:windowBackground">@color/bg_teacher_primary</item>
+        <item name="android:statusBarColor">@color/bg_teacher_primary</item>
+        <item name="android:navigationBarColor">@color/bg_teacher_nav</item>
+    </style>
+
+    <!-- ✅ No animation theme — instant screen switch for nav buttons -->
+    <style name="Theme.NoAnimation" parent="Theme.DeadLineTracker">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+</resources>

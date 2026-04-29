@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_task_card" android:padding="16dp" android:layout_marginBottom="10dp">
+    <!--  Student name  -->
+    <TextView android:id="@+id/tvStudentName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Student Name" android:textSize="14sp" android:textStyle="bold" android:textColor="@color/text_primary" android:fontFamily="@font/sora" android:layout_marginBottom="4dp"/>
+    <!--  Submitted at  -->
+    <TextView android:id="@+id/tvSubmittedAt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Submitted: —" android:textSize="11sp" android:textColor="@color/text_secondary" android:layout_marginBottom="10dp"/>
+    <!--  File row  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/bg_input_field" android:padding="10dp">
+        <TextView android:id="@+id/tvFileName" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="📎 filename.pdf" android:textSize="12sp" android:textColor="@color/text_primary" android:ellipsize="middle" android:maxLines="1"/>
+        <TextView android:id="@+id/btnDownloadSubmission" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Download" android:textSize="12sp" android:textStyle="bold" android:textColor="@color/green_light" android:background="@drawable/bg_stat_done" android:paddingLeft="12dp" android:paddingRight="12dp" android:paddingTop="6dp" android:paddingBottom="6dp"/>
+    </LinearLayout>
+</LinearLayout>

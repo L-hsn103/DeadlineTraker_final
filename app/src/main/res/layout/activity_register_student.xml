@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp"
+        android:paddingTop="60dp"
+        android:paddingBottom="40dp">
+
+        <TextView android:id="@+id/tvBack"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="←" android:textSize="20sp" android:textColor="#66FFFFFF"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Green badge -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎓  Student"
+            android:textSize="11sp"
+            android:textColor="@color/green_light"
+            android:background="@drawable/bg_badge_green"
+            android:paddingLeft="11dp" android:paddingRight="11dp"
+            android:paddingTop="4dp" android:paddingBottom="4dp"
+            android:layout_marginBottom="14dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Create your account" android:textSize="22sp" android:textStyle="bold"
+            android:textColor="@color/text_primary" android:fontFamily="@font/sora" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" android:layout_marginBottom="24dp"
+            android:text="Fill in your details to get started"
+            android:textSize="12sp" android:textColor="@color/text_secondary" />
+
+        <!-- Full Name -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="FULL NAME" android:textSize="10sp" android:textColor="@color/text_label"
+            android:textAllCaps="true" android:letterSpacing="0.08" android:layout_marginBottom="6dp" />
+        <EditText android:id="@+id/etFullName"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="e.g. Rahim Uddin" android:background="@drawable/bg_input_field"
+            android:padding="13dp" android:textSize="13sp" android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted" android:layout_marginBottom="14dp"
+            android:inputType="textPersonName" />
+
+        <!-- Student ID -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="STUDENT ID" android:textSize="10sp" android:textColor="@color/text_label"
+            android:textAllCaps="true" android:letterSpacing="0.08" android:layout_marginBottom="6dp" />
+        <EditText android:id="@+id/etStudentId"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="e.g. STU-2024-0042" android:background="@drawable/bg_input_field"
+            android:padding="13dp" android:textSize="13sp" android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted" android:layout_marginBottom="14dp" />
+
+        <!-- Department -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="DEPARTMENT" android:textSize="10sp" android:textColor="@color/text_label"
+            android:textAllCaps="true" android:letterSpacing="0.08" android:layout_marginBottom="6dp" />
+        <EditText android:id="@+id/etDepartment"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="e.g. CSE" android:background="@drawable/bg_input_field"
+            android:padding="13dp" android:textSize="13sp" android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted" android:layout_marginBottom="14dp" />
+
+        <!-- Batch -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="BATCH" android:textSize="10sp" android:textColor="@color/text_label"
+            android:textAllCaps="true" android:letterSpacing="0.08" android:layout_marginBottom="6dp" />
+        <EditText android:id="@+id/etBatch"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="e.g. 2022" android:background="@drawable/bg_input_field"
+            android:padding="13dp" android:textSize="13sp" android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted" android:layout_marginBottom="14dp"
+            android:inputType="number" />
+
+        <!-- Gmail -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="GMAIL (FOR VERIFICATION)" android:textSize="10sp"
+            android:textColor="@color/text_label" android:textAllCaps="true"
+            android:letterSpacing="0.08" android:layout_marginBottom="6dp" />
+        <EditText android:id="@+id/etEmail"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="you@gmail.com" android:background="@drawable/bg_input_field"
+            android:padding="13dp" android:textSize="13sp" android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted" android:layout_marginBottom="14dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="PASSWORD" android:textSize="10sp" android:textColor="@color/text_label"
+            android:textAllCaps="true" android:letterSpacing="0.08" android:layout_marginBottom="6dp" />
+        <EditText android:id="@+id/etPassword"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="••••••••" android:background="@drawable/bg_input_field"
+            android:padding="13dp" android:textSize="13sp" android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted" android:layout_marginBottom="16dp"
+            android:inputType="textPassword" />
+
+        <!-- Verification note -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_info_green"
+            android:padding="13dp"
+            android:layout_marginBottom="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="✉️" android:textSize="14sp" android:layout_marginEnd="9dp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="A verification link will be sent to your Gmail before activation."
+                android:textSize="11sp" android:textColor="@color/text_label"
+                android:lineSpacingMultiplier="1.5" />
+        </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:indeterminateTint="@color/green_primary"
+            android:visibility="gone" />
+
+        <Button android:id="@+id/btnRegister"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Register as Student" android:textSize="14sp"
+            android:textColor="@color/text_primary" android:fontFamily="@font/sora"
+            android:textStyle="bold" android:background="@drawable/bg_button_green"
+            android:padding="14dp" />
+
+    </LinearLayout>
+</ScrollView>
